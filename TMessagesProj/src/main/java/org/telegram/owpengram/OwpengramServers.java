@@ -232,7 +232,10 @@ public class OwpengramServers {
     }
 
     public static OwpengramServer getServerForAccount(int accountNum) {
-        return getServerById(getServerIdForAccount(accountNum));
+        String id = getServerIdForAccount(accountNum);
+        if (id == null) return owpengramServer();
+        OwpengramServer s = getServerById(id);
+        return s != null ? s : owpengramServer();
     }
 
     public static boolean hasServerForAccount(int accountNum) {
