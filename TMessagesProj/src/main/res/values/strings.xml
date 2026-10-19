@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="AppName">OwpenGram</string>
+    <string name="AppName">LiduGram</string>
     <string name="AppNameBeta">OwpenGram Beta</string>
     <string name="LanguageName">English</string>
     <string name="English">English</string>
@@ -8331,7 +8331,7 @@
     <string name="UsePIN">Use PIN</string>
     <string name="EnterPINorFingerprint">Enter your PIN or use a fingerprint</string>
     <string name="EnterPIN">Enter your PIN</string>
-    <string name="AppLocked">OwpenGram Locked</string>
+    <string name="AppLocked">LiduGram Locked</string>
     <string name="ShowSensitiveContent">Show 18+ Content</string>
     <string name="ShowSensitiveContentInfo">Do not hide media that contain content suitable only for adults</string>
     <string name="ConfirmSensitiveContentTitle">18+ Content</string>
