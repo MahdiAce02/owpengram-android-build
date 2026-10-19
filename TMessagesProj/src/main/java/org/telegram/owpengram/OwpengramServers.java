@@ -60,21 +60,28 @@ public class OwpengramServers {
         customServersChangedListeners.remove(listener);
     }
 
-    private static final String DEFAULT_HOST = "144.31.167.136";
+    private static final String DEFAULT_HOST = "tel.lidunet.ir";
     private static final int    DEFAULT_PORT = 2398;
 
     // OwpenGram's own production server RSA key.
     static final String OWPENGRAM_RSA_KEY =
-        "-----BEGIN RSA PUBLIC KEY-----\n" +
-        "MIIBCgKCAQEAz7F4hZSo7AK3UQbwXCWBasQJts1M2LU2s/OkCRSxde/MWIIJy77d\n" +
-        "tTYVYj/wm72SlSnY7d6rCNlslHu7i16Rd6G/0bb9eIjb2YIosSFEhXIMR5pKDuh8\n" +
-        "rle49WfvE4V9+AKquw+xIa+07HkyTePI4d78++aKM00CDeBD/NcYYkcyTG7y8gpV\n" +
-        "F+oxjJEaw5L03uhUepzhgKRrAt7GJsUQmYlkPEtDB2gp8TOC1CNNk1ecHtTY0wGb\n" +
-        "hItzMqcOEOdVq9WhvSO0LT1TJSOrGdOf27KGbJ5emJnE3ENiW/RLOrXXLuY6QoCf\n" +
-        "yt9lo9W6xu94BLnpx0pxGXti1J68ZsQfoQIDAQAB\n" +
+        "-----BEGIN RSA PUBLIC KEY-----
+" +
+        "MIIBCgKCAQEA61mXmEy8YB1vHp9tgDM7yA5uyzopahO5lQFc4A3fKgA/AU7n9yFH
+" +
+        "jDjj6bXqjLaAFYveYysigRhYzSghdu8FPMcelharq/tU+CyVCHS9Gje7FF1gYunp
+" +
+        "KqbL4taCkQndxx2cAVAzJiw+fkAVKFVjkiz2dwrs5n9K10YydxKF4sFqICe2KX5F
+" +
+        "HfzeH56C1e0uF4FR7M/jWguBPSd5IJKcxrTXCRVtHv6vMpnkolIJS71yuXbjq85j
+" +
+        "pKmMxVSkpttK6pmB8RI5gV2jkvmEp2o61Y9i7SLHY5EaLTtuTWfFz0T8GloVkfG6
+" +
+        "mrL6kG/9h0C5FxlWPlvfhH2JaLa3cBKFiQIDAQAB
+" +
         "-----END RSA PUBLIC KEY-----";
     // fingerprint == 0 -> native layer derives it from the PEM (see ConnectionsManager::applyServerConfig).
-    static final long OWPENGRAM_RSA_FINGERPRINT = 0;
+    static final long OWPENGRAM_RSA_FINGERPRINT = 0x5ea7766399a94ed8L;
 
     // Official Telegram production RSA key (restored from original Android source)
     static final String TELEGRAM_RSA_KEY =
@@ -93,8 +100,8 @@ public class OwpengramServers {
     public static OwpengramServer owpengramServer() {
         OwpengramServer s = new OwpengramServer();
         s.id                 = ID_OWPENGRAM;
-        s.name               = "OwpenGram";
-        s.description        = "This is a test OwpenGram server.";
+        s.name               = "LiduGram";
+        s.description        = "LiduGram Official Server (tel.lidunet.ir)";
         s.host               = DEFAULT_HOST;
         s.port               = DEFAULT_PORT;
         s.isOfficial         = true;
@@ -130,8 +137,8 @@ public class OwpengramServers {
 
     public static List<OwpengramServer> listServers() {
         List<OwpengramServer> result = new ArrayList<>();
-        result.add(telegramServer());
         result.add(owpengramServer());
+        result.add(telegramServer());
         result.addAll(loadCustomServers());
         return result;
     }
@@ -372,9 +379,18 @@ public class OwpengramServers {
         int mainDc = server.mainDcId > 0
                 ? server.mainDcId
                 : (server.isTelegram ? 2 : 1);
+        String hostToUse = server.host;
+        try {
+            if (!server.isTelegram && hostToUse != null && !hostToUse.isEmpty() && !Character.isDigit(hostToUse.charAt(0))) {
+                java.net.InetAddress addr = java.net.InetAddress.getByName(hostToUse);
+                if (addr != null && addr.getHostAddress() != null) {
+                    hostToUse = addr.getHostAddress();
+                }
+            }
+        } catch (Exception ignore) {}
         ConnectionsManager.native_applyServerConfig(
                 accountNum,
-                server.host,
+                hostToUse,
                 server.port,
                 server.isTelegram,
                 mainDc,
