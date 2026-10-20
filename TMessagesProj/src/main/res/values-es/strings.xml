@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="AppName">OwpenGram</string>
-    <string name="AppNameBeta">OwpenGram Beta</string>
+    <string name="AppName">LiduGram</string>
+    <string name="AppNameBeta">LiduGram Beta</string>
     <string name="LanguageName">Español</string>
     <string name="English">Inglés</string>
     <string name="LanguageNameInEnglish">Spanish</string>
@@ -91,10 +91,10 @@
     <string name="WidgetShortcuts">Atajos</string>
     <string name="WidgetLoggedOff">La cuenta ha sido desconectada.</string>
     <!--notification-->
-    <string name="NotificationMessageGiftCode">%1$s te envió un código de regalo de %2$s de Telegram Premium</string>
-    <string name="NotificationMessageGiveaway">%1$s te envió un sorteo de %2$s Telegram Premium de %3$sm</string>
-    <string name="NotificationMessageChannelGiveaway">%1$s publicó un sorteo de %2$s Telegram Premium de %3$sm</string>
-    <string name="NotificationMessageChatGiveaway">%1$s envió un sorteo de %3$s Telegram Premium de %4$sm al grupo %2$s</string>
+    <string name="NotificationMessageGiftCode">%1$s te envió un código de regalo de %2$s de LiduGram Premium</string>
+    <string name="NotificationMessageGiveaway">%1$s te envió un sorteo de %2$s LiduGram Premium de %3$sm</string>
+    <string name="NotificationMessageChannelGiveaway">%1$s publicó un sorteo de %2$s LiduGram Premium de %3$sm</string>
+    <string name="NotificationMessageChatGiveaway">%1$s envió un sorteo de %3$s LiduGram Premium de %4$sm al grupo %2$s</string>
     <string name="NotificationPinnedGiveaway">%1$s fijó un sorteo</string>
     <string name="NotificationReactGiveaway">%1$s reaccionó %2$s a tu sorteo</string>
     <string name="NotificationChatReactGiveaway">%1$s reaccionó %3$s en el grupo %2$s a tu sorteo</string>
