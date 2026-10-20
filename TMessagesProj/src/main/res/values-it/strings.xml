@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="AppName">OwpenGram</string>
-    <string name="AppNameBeta">OwpenGram Beta</string>
+    <string name="AppName">LiduGram</string>
+    <string name="AppNameBeta">LiduGram Beta</string>
     <string name="LanguageName">Italiano</string>
     <string name="English">Inglese</string>
     <string name="LanguageNameInEnglish">Italian</string>
@@ -127,7 +127,7 @@
     <string name="ExternalFolderInfo">Sfoglia il tuo archivio esterno</string>
     <string name="SearchMusic">Cerca musica</string>
     <!--notification-->
-    <string name="NotificationMessageGiftCode">%1$s ti ha inviato un codice regalo per %2$s di Telegram Premium</string>
+    <string name="NotificationMessageGiftCode">%1$s ti ha inviato un codice regalo per %2$s di LiduGram Premium</string>
     <string name="NotificationMessageGiveaway">%1$s ti ha inviato un giveaway di %2$s abbonamenti Premium da %3$sm</string>
     <string name="NotificationMessageChannelGiveaway">%1$s ha pubblicato un giveaway di %2$s abbonamenti Premium da %3$sm</string>
     <string name="NotificationMessageChatGiveaway">%1$s ha inviato un giveaway di %3$s abbonamenti Premium da %4$sm nel gruppo %2$s</string>
@@ -1058,13 +1058,13 @@
     <string name="PrivacyLastSeen">Ultimo accesso e in linea</string>
     <string name="PrivacyMessagesContactsAndPremium">Contatti e utenti Premium</string>
     <string name="PrivacyMessages">Messaggi</string>
-    <string name="PrivacyMessagesInfo">Puoi limitare i messaggi dagli utenti che non sono tra i tuoi contatti e non hanno Premium.\n\n**Cos\'è Telegram Premium?**</string>
+    <string name="PrivacyMessagesInfo">Puoi limitare i messaggi dagli utenti che non sono tra i tuoi contatti e non hanno Premium.\n\n**Cos\'è LiduGram Premium?**</string>
     <string name="PrivacyVoiceMessages">Messaggi vocali</string>
     <string name="PrivacyMessagesTitle">Chi può inviarmi messaggi?</string>
     <string name="PrivacyVoiceMessagesTitle">Chi può inviarmi messaggi vocali o videomessaggi?</string>
     <string name="PrivacyVoiceMessagesInfo">Puoi decidere chi può inviarti messaggi vocali o videomessaggi con precisione dettagliata.</string>
     <string name="PrivacyVoiceMessagesInfo2">Puoi aggiungere utenti o interi gruppi come eccezioni che annulleranno le impostazioni precedenti.</string>
-    <string name="PrivacyVoiceMessagesPremiumOnly">Solo gli abbonati a *Telegram Premium* possono decidere da chi ricevere messaggi vocali.</string>
+    <string name="PrivacyVoiceMessagesPremiumOnly">Solo gli abbonati a *LiduGram Premium* possono decidere da chi ricevere messaggi vocali.</string>
     <string name="PrivacyProfilePhoto">Foto del profilo</string>
     <string name="PrivacyProfilePhotoTitle">Chi può vedere le foto del mio profilo?</string>
     <string name="PrivacyProfilePhotoInfo">Puoi decidere chi può vedere la tua foto del profilo con precisione dettagliata.</string>
