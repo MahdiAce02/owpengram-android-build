@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="AppName">OwpenGram</string>
-    <string name="AppNameBeta">OwpenGram Beta</string>
+    <string name="AppName">LiduGram</string>
+    <string name="AppNameBeta">LiduGram Beta</string>
     <string name="LanguageName">Deutsch</string>
     <string name="English">Englisch</string>
     <string name="LanguageNameInEnglish">German</string>
@@ -91,7 +91,7 @@
     <string name="WidgetShortcuts">Verknüpfungen</string>
     <string name="WidgetLoggedOff">Konto wurde abgemeldet.</string>
     <!--notification-->
-    <string name="NotificationMessageGiftCode">%1$s hat dir einen Geschenkcode für %2$s von Telegram Premium geschickt</string>
+    <string name="NotificationMessageGiftCode">%1$s hat dir einen Geschenkcode für %2$s von LiduGram Premium geschickt</string>
     <string name="NotificationMessageGiveaway">%1$s hat dir eine Verlosung von %2$sx %3$sm Premium-Abonnements geschickt</string>
     <string name="NotificationMessageChannelGiveaway">%1$s hat eine Verlosung von %2$sx %3$sm Premium-Abonnements veröffentlicht</string>
     <string name="NotificationMessageChatGiveaway">%1$s hat eine Verlosung von %3$sx %4$sm Premium-Abonnements an die Gruppe %2$s geschickt</string>
