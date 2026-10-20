@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="AppName">OwpenGram</string>
-    <string name="AppNameBeta">OwpenGram Beta</string>
+    <string name="AppName">LiduGram</string>
+    <string name="AppNameBeta">LiduGram Beta</string>
     <string name="LanguageName">Nederlands</string>
     <string name="English">Engels</string>
     <string name="LanguageNameInEnglish">Dutch</string>
@@ -127,7 +127,7 @@
     <string name="ExternalFolderInfo">Blader door je externe opslag</string>
     <string name="SearchMusic">Zoek muziek</string>
     <!--notification-->
-    <string name="NotificationMessageGiftCode">%1$s heeft je een cadeaucode voor %2$s Telegram Premium gestuurd</string>
+    <string name="NotificationMessageGiftCode">%1$s heeft je een cadeaucode voor %2$s LiduGram Premium gestuurd</string>
     <string name="NotificationMessageGiveaway">%1$s heeft je een winactie voor %2$s premium-abonnementen van %3$s maanden gestuurd</string>
     <string name="NotificationMessageChannelGiveaway">%1$s is een winactie voor %2$s premium-abonnementen van %3$s maanden gestart</string>
     <string name="NotificationMessageChatGiveaway">%1$s heeft een winactie voor %3$s premium-abonnementen van %4$s maanden naar de groep %2$s gestuurd</string>
